@@ -1,0 +1,97 @@
+#actividad 1 -Crear un programa que imprima por pantalla el mensaje: “Hola Mundo!”.
+
+print ("hola mundo")
+
+# actividad 2 - Crear un programa que pida al usuario su nombre e imprima por pantalla un saludo usando el nombre ingresado. Por ejemplo: si el usuario ingresa “Marcos”, el programa debe imprimir por pantalla “Hola Marcos!”. Consejo: esto será más sencillo si utilizas print(f…) para realizar la impresión por pantalla.
+
+print("Hola! Como te llamas?")
+nombre = input("ingresa tu nombre ")
+print(f"hola {nombre}")
+
+# actividad 3 - Crear un programa que pida al usuario su nombre, apellido, edad y lugar de residencia e imprima por pantalla una oración con los datos ingresados. Por ejemplo: si el usuario ingresa “Marcos”, “Pérez”, “30” y “Argentina”, el programa debe imprimir “Soy Marcos Pérez, tengo 30 años y vivo en Argentina”. Consejo: esto será más sencillo si utilizas print(f…) para realizar la impresión por pantalla.
+
+print("Por favor ingrese su nombre" )
+nombre = input("ingresa tu nombre ")
+print("Cual es tu apellido?")
+apellido = input("ingresa tu apellido ")
+print("Que edad tienes? ")
+edad = input("ingresa tu edad ")
+print("De que pais eres? ")
+pais = input("ingresa de que pais eres ")
+print(f"soy {nombre} {apellido}, tengo {edad} y soy {pais}" )
+
+
+print("Hola, dime el radio del circulo por el que quieres saber el area y su perimetro por favor")
+radio = int(input(""))       
+area = (3.14 * radio * radio)
+perimetro = 2 * 3.14 * radio
+print(f"en base al radio que proporsionaste, el area es ",{area}, "y su perimetro es ", {perimetro})
+
+print("Hola, dime la cantidad de segundos que quieras y lo convertire a horas para ti ")
+segundos = int(input(""))       
+minutos = segundos / 60
+horas = minutos / 60
+print(f"en base a los segundos que proporsionaste, los mismos equivalen a ", horas, "hora/s")
+
+print("Hola, dime un numero y te mostrare la tabla de multiplicar de ese numero ")
+numero = int(input(""))       
+x1 = numero*1
+x2 = numero*2
+x3 = numero*3
+x4 = numero*4
+x5 = numero*5
+x6 = numero*6
+x7 = numero*7
+x8 = numero*8
+x9 = numero*9
+x10 = numero*10
+print(f"en base al numero proporsionado la tabla seria a")
+print(numero, "x", 1, "=", x1 )
+print(numero, "x", 1, "=", x2 )
+print(numero, "x", 1, "=", x3 )
+print(numero, "x", 1, "=", x4 )
+print(numero, "x", 1, "=", x5 )
+print(numero, "x", 1, "=", x6 )
+print(numero, "x", 1, "=", x7 )
+print(numero, "x", 1, "=", x8 )
+print(numero, "x", 1, "=", x9 )
+print(numero, "x", 1, "=", x10 )
+
+print("Hola, dime dos numeros distintos de cero por favor. Escribe el primer numero ")
+numero1 = int(input("")) 
+print("ahora dime el segundo numero por favor ") 
+numero2 = int(input(""))     
+suma = numero1 + numero2
+resta = numero1 - numero2
+multiplicacion = numero1 * numero2
+division = numero1 / numero2
+print(f"en base al numero proporsionado los resultados serian: ")
+print("suma", suma)
+print("resta", resta)
+print("multiplicacion", multiplicacion)
+print("division", division)
+
+print("Hola, dime tu altura y peso asi podre calcular tu indice de masa corporal. Primero dime tu altura por favor ")
+altura = float(input("")) 
+print("ahora dime cuanto pesas (en Kgs.) ") 
+peso = float(input(""))     
+imc = peso / (altura)**2
+print(f"en base a la altura y el peso proporsionado tu indice de masa corporal (IMC) seria: ")
+print(imc)
+
+
+print("Hola, la temperatura que quieras en grados celsiusy te pasare su equivalencia a Fahrenheit ")
+celsius = float(input("")) 
+fahrenheit = (9/5)*celsius+32   
+print(f"en base a los grados celsius que has ingresado, su equivalente a Fahrenheit seria: ")
+print(fahrenheit)
+
+print("Hola, te voy a pedir que ingreses 3 numeros por favor. Ingresa el primer numero ")
+numero1 = float(input("")) 
+print("ahora ingresa el segundo numero")
+numero2 = float(input(""))
+print("ahora ingresa el tercer numero")
+numero3 = float(input(""))
+promedio = (numero1 + numero2 + numero3)/3
+print(f"en base los tres numeros que ingresaste el promedio de los mismos es: ")
+print(promedio)
